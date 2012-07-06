@@ -1,3 +1,5 @@
+gem 'mongoid', '=3.0.0.rc'
+
 require "rspec"
 require "spork"
 require "mongoid"
@@ -7,8 +9,7 @@ require "support/node"
 Spork.prefork do
 
   Mongoid.configure do |config|
-    name = "mongoid-graph"
-    config.master = Mongo::Connection.new.db(name)
+    config.connect_to("mongoid-graph")
   end
 
   RSpec.configure do |config|
