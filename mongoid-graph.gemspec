@@ -25,6 +25,6 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency "guard-rspec", "~> 0.7.0"
 
   gem.add_runtime_dependency "activesupport", "~> 3.2.3"
-  gem.add_runtime_dependency "mongoid", "~> 2.4.9"
+  gem.add_runtime_dependency "mongoid", "~> 3.0.0.rc"
   gem.add_runtime_dependency "bson_ext", "~> 1.6.2"
 end
